@@ -1,0 +1,53 @@
+.loginForm {
+  font-weight: 600;
+  font-size: 120%;
+  margin: 3% 28% 20%;
+  border: 2px solid black;
+  padding: 3%;
+  background-color: #d3cedf;
+}
+
+.registerForm {
+  font-weight: 600;
+  font-size: 120%;
+  margin: 2% 16% 20%;
+  border: 2px solid black;
+  padding: 3%;
+  background-color: #d3cedf;
+}
+
+.registerTitle {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 180%;
+  color: rgb(21, 41, 54);
+}
+
+.orderBtn {
+  margin: 15px;
+}
+
+.orderTable {
+  margin: 1% 12% 25%;
+}
+
+.orderDetailsTable {
+  margin: 2% 25%;
+  padding: 0.5%;
+  font-size: 120%;
+  font-weight: 600;
+  border: 2px solid;
+}
+
+.requestButtons {
+  text-align: center;
+}
+
+.staffTable {
+  margin: 2% 10% 20%;
+}
+
+.orderStatusTable {
+  margin-bottom: 20%;
+}

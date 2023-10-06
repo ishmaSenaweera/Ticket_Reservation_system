@@ -1,0 +1,60 @@
+/* navigation bar */
+
+.navbar {
+  padding: 0 1rem 0.2rem;
+  background-color: #05386b;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: black;
+}
+
+/* footer */
+
+.foter {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #05386b;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: white;
+  margin: 5px;
+}
+
+.homeImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 2% 0 2%;
+
+  /* margin-bottom: 15%;
+  display: grid;
+  place-items: center; */
+}
+
+/* .homeButtons {
+  margin: 5% 20%;
+}
+
+.homeButtonText {
+  font-weight: 700;
+  font-size: 2rem;
+} */
