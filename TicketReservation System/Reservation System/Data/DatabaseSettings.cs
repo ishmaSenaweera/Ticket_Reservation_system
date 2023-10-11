@@ -2,9 +2,10 @@
 {
     public class DatabaseSettings
     {
-        public String CollectionName { get; set; }
-        public String DatabaseName { get; set; }
-        public String Connection { get; set; }
+        public string CollectionName { get; set; }
+        public string TravelerCollectionName { get; set; }
+        public string DatabaseName { get; set; }
+        public string Connection { get; set; }
 
     }
 }

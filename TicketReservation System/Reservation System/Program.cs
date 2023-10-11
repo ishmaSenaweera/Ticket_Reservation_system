@@ -4,13 +4,24 @@ using Reservation_System.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//middleware for reading appsettings.json to access for initialize the mconnection to mongo db
+// Middleware for reading appsettings.json to access for initialize the mconnection to mongo db
 builder.Services.Configure<DatabaseSettings>(
     builder.Configuration.GetSection("ConnectionStrings"));
 
 builder.Services.AddSingleton<UserServices>();
 
+builder.Services.AddSingleton<TravelerServices>();
+
 builder.Services.AddControllersWithViews();
+
+// Add CORS services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAnyOriginPolicy",
+        builder => builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
 
 var app = builder.Build();
 
@@ -21,18 +32,18 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+// Use CORS with the Android app
+app.UseCors("AllowAnyOriginPolicy");
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
+// Fallback route to serve index.html if no other routes match
 app.MapFallbackToFile("index.html"); ;
 
 app.Run();
