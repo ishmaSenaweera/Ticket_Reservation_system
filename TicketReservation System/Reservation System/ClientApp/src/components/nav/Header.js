@@ -26,8 +26,18 @@ function Header() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="/allTravelers">
               Traveler Management
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/">
+              Reservation Management
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/">
+              Train Management
             </a>
           </li>
         </ul>
