@@ -13,6 +13,9 @@ import TravelAgents from "./components/user_management/TravelAgents";
 import AllTravelers from "./components/traveler_management/AllTravelers";
 import AddTraveler from "./components/traveler_management/AddTraveler";
 import UpdateTraveler from "./components/traveler_management/UpdateTraveler";
+import AllBookings from "./components/booking_management/AllBookings";
+import AddBooking from "./components/booking_management/AddBooking";
+import UpdateBooking from "./components/booking_management/UpdateBooking";
 
 function App() {
   const location = useLocation();
@@ -36,7 +39,13 @@ function App() {
         {/* Traveler Routes */}
         <Route path="/allTravelers" element={<AllTravelers />} />
         <Route path="/addTraveler" element={<AddTraveler />} />
-        <Route path="/updateTraveler/:nic" element={<UpdateTraveler />} />
+              <Route path="/updateTraveler/:nic" element={<UpdateTraveler />} />
+
+        {/* Booking Routes */}
+        <Route path="/allBookings" element={<AllBookings />} />
+        <Route path="/addBooking" element={<AddBooking />} />
+        <Route path="/updateBooking/:id" element={<UpdateBooking />} />
+
       </Routes>
       {!excludeHeaderFooter && <Footer />}
     </div>
