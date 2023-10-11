@@ -8,6 +8,6 @@ Database: MongoDB <br />
 
 ### Member Details:
 Wishvajith G.K.N.P. (namalpathum) - IT20168704 - Project Leader <br />
-Senaweera T.I.S (ishmaSenaweera) - IT20123468 <br />
+Senaweera T.I.S. (ishmaSenaweera) - IT20123468 <br />
 Weeratunga G.S. (sathmini) - IT19087252 <br />
 Wijerathne D.M.R. (ravindu629) - IT19208022 <br />
