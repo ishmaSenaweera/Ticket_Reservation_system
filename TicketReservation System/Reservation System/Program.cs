@@ -1,3 +1,4 @@
+using Reservation_system.Services;
 using Reservation_System.Data;
 using Reservation_System.Services;
 
@@ -11,6 +12,8 @@ builder.Services.Configure<DatabaseSettings>(
 builder.Services.AddSingleton<UserServices>();
 
 builder.Services.AddSingleton<TravelerServices>();
+
+builder.Services.AddSingleton<ReservationServices>();
 
 builder.Services.AddControllersWithViews();
 
