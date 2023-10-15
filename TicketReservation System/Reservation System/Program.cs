@@ -15,6 +15,9 @@ builder.Services.AddSingleton<TravelerServices>();
 
 builder.Services.AddSingleton<ReservationServices>();
 
+// Register TrainServices
+builder.Services.AddSingleton<TrainServices>();
+
 builder.Services.AddControllersWithViews();
 
 // Add CORS services

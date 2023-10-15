@@ -16,6 +16,9 @@ import UpdateTraveler from "./components/traveler_management/UpdateTraveler";
 import AllBookings from "./components/booking_management/AllBookings";
 import AddBooking from "./components/booking_management/AddBooking";
 import UpdateBooking from "./components/booking_management/UpdateBooking";
+import AddTrain from "./components/train_management/AddTrain";
+import UpdateTrain from "./components/train_management/UpdateTrain";
+import AllTrain from "./components/train_management/AllTrain";
 
 function App() {
   const location = useLocation();
@@ -45,6 +48,10 @@ function App() {
         <Route path="/allBookings" element={<AllBookings />} />
         <Route path="/addBooking" element={<AddBooking />} />
         <Route path="/updateBooking/:id" element={<UpdateBooking />} />
+        {/* Train Routes */}
+        <Route path="/allTrain" element={<AllTrain />} />
+        <Route path="/updateTrain/:id" element={<UpdateTrain />} />
+        <Route path="/addTrain" element={<AddTrain />} />
 
       </Routes>
       {!excludeHeaderFooter && <Footer />}
