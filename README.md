@@ -12,4 +12,4 @@ Senaweera T.I.S. (ishmaSenaweera) - IT20123468 <br />
 Weeratunga G.S. (sathmini) - IT19087252 <br />
 Wijerathne D.M.R. (ravindu629) - IT19208022 <br />
 
-### Mobile app at: https://github.com/namalganegama/Ticket_Reservation_system
+### Mobile app at: https://github.com/ishmaSenaweera/Train_Reservation_System_Mobile
